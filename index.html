@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navbar with Dropdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-logo">DEV.STUDENT pallavipandit</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+
+      <!-- DROPDOWN ITEM -->
+      <li class="dropdown" id="projectsDropdown">
+        <button class="dropdown-toggle" id="projectsToggle" type="button" aria-expanded="false" aria-controls="projectsMenu">
+          Projects
+          <span class="arrow" aria-hidden="true">▼</span>
+        </button>
+        <div class="dropdown-menu" id="projectsMenu">
+          <a href="#">Landing Pages</a>
+          <a href="#">Components</a>
+          <a href="#">Mini Apps</a>
+        </div>
+      </li>
+
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- HAMBURGER BUTTON -->
+    <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- DEMO PAGE CONTENT -->
+  <main class="page-content">
+    <h1>Navbar and Dropdown Example</h1>
+    <p>Edit the links, colors, and fonts as you like. This is a simple base for your projects.</p>
+  </main>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
